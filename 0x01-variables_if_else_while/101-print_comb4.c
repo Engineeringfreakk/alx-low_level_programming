@@ -20,7 +20,7 @@ int main(void)
 					putchar(hundred);
 					putchar(ten);
 					putchar(one);
-					if (!(one == '9' && ten == '8' && hundred == '7'))
+					if (!(one == '9' && hundred == '7' && ten == '8'))
 					{
 						putchar(',');
 						putchar(' ');
