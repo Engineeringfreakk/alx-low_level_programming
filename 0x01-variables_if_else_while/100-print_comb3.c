@@ -5,10 +5,10 @@
  */
 int main(void)
 {
-	int one ='0';
-	int ten ='0';
+	int one = '0';
+	int ten = '0';
 
-	for  (ten ='0'; ten <='9'; ten++)
+	for  (ten = '0'; ten <= '9'; ten++)
 	{
 		for  (one = '0'; one <= '9'; one++)
 		{
@@ -16,7 +16,7 @@ int main(void)
 			{
 				putchar(ten);
 				putchar(one);
-				if (! (one == '9' && ten == '8'))
+				if (!(one == '9' && ten == '8'))
 				{
 					putchar(',');
 					putchar(' ');
