@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - Program that prints all possible different combinations of 3 digits
+ * main - Program that prints possible different combinations of three digits
  * Return: 0 (Success)
  */
 int main(void)
@@ -9,18 +9,18 @@ int main(void)
 	int ten = '0';
 	int hundred = '0';
 
-	for (hundred = '0'; hundred <= '0'; hundred++)
+	for (hundred = '0'; hundred <= '9'; hundred++)
 	{
-		for (ten = '0'; ten <= '0'; ten++)
+		for (ten = '0'; ten <= '9'; ten++)
 		{
-			for (one = '0'; one <= '0'; one++)
+			for (one = '0'; one <= '9'; one++)
 			{
 				if (!((one == ten) || (ten == hundred) || (ten > one) || (hundred > ten)))
 				{
 					putchar(hundred);
 					putchar(ten);
 					putchar(one);
-					if (!(one == '9' && hundred == '7' && ten == '8'))
+					if (!(one == '9' && ten == '8' && hundred == '7'))
 					{
 						putchar(',');
 						putchar(' ');
