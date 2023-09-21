@@ -8,7 +8,6 @@ char *cap_string(char *str)
 {
 	int ring = 0;
 
-
 	while (str[ring])
 	{
 		while (!(str[ring] >= 'a' && str[ring] <= 'z'))
@@ -28,6 +27,7 @@ char *cap_string(char *str)
 				str[ring - 1] == '}' ||
 				ring == 0)
 			str[ring] -= 32;
+		ring++;
 	}
 	return (str);
 }
