@@ -8,7 +8,7 @@ void free_list(list_t *head)
 {
 	list_t *lit;
 
-	while (heads)
+	while (head)
 	{
 		lit = head->next;
 		free(head->str);

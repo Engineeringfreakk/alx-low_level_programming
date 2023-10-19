@@ -1,3 +1,4 @@
+#include <stddef.h>
 #ifndef lists_h
 #define lists_h
 /**
@@ -6,7 +7,6 @@
  * @len: length of the string
  * @next: points to the next node
  * Description: singly linked lists node structure
- * for Holberton project
  */
 typedef struct list_s
 {
